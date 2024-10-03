@@ -1,0 +1,12 @@
+<select
+  name="userLanguage"
+  class="userLanguage"
+  [(ngModel)]="userLanguage"
+  (change)="changeLanguage($event)"
+>
+  <option *ngFor="let lang of availableLanguages" value="{{ lang }}">
+    {{ lang }}
+  </option>
+</select>
+
+<label [innerHtml]="myname"></label>
